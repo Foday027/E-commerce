@@ -66,3 +66,24 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+
+table, th, td  {
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+input {
+  border-radius: 5px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+
+.table2:hover {
+  background-color: coral;
+}
+
+th {
+  height: 70px;
+  background-color: antiquewhite;
+}

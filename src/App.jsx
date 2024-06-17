@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import './App.css'
 
+
 function App() {
   useEffect(() => {
     async function fetchData() {
@@ -26,7 +27,7 @@ function App() {
         <label >
           Find:
         </label>
-        <input className='label mb-3' onChange={(e) => setSearch(e.target.value)
+        <input className='label' onChange={(e) => setSearch(e.target.value)
         }
           type='text'
           placeholder='Search here'
@@ -46,7 +47,7 @@ function App() {
 
         <tbody>
           {filteredProducts.map(product => (
-            <tr key={product.id} >
+            <tr className='table2' key={product.id} >
               <td>{product.category}</td>
               <td>{product.price}</td>
               <td>{product.inStock ? 'yes' : 'no'} </td>
